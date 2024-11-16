@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+   <groups>
+   <run>
+   <include name="smoke"></include>
+   <include name="functionality"></include>
+   <exclude name="system"></exclude>
+   </run>
+   </groups>
+    <classes>
+      <class name="carsbikes.Audi"/>
+      <class name="testng.AnnotationAttributeDependsOnMethod"/>
+      <class name="testng.AnnotationAttributesPriority"/>
+      <class name="carsbikes.RoyalEnfield"/>
+      <class name="carsbikes.RollsRoyce"/>
+      <class name="testng.AnnotationAttributeEnabledFalse"/>
+      <class name="testng.AnnotationAttributeInvocationCount"/>
+      <class name="testng.AnnotationAttributeThreadPoolSize"/>
+      <class name="testng.Assig1"/>
+      <class name="testng.Sample"/>
+      <class name="carsbikes.Ferrari"/>
+      <class name="testng.ToLearnTestNg"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
